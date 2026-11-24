@@ -33,7 +33,7 @@ describe('rotation', () => {
   it.each(PIECE_TYPES)('4 rotations de la pièce %s redonnent la forme de départ', (type) => {
     let forme = getShape(type);
     for (let i = 0; i < 4; i++) forme = rotate(forme);
-    expect(forme).toEqual(getShape(type));
+    expect(forme).toEqual(getShape(type));  
   });
 
   it.each(PIECE_TYPES)('la rotation de %s garde 4 carrés', (type) => {
